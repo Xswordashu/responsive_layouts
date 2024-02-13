@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Style Layout</title>
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+           *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+            background-color: #fff;
+          }
+
+          header {
+            background-color: #fff;
+            margin: 0 auto;
+            max-width: 1200px;
+          }
+
+          nav{
+          
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            align-items: center;
+            margin: 0 auto;
+          }
+
+          main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 20px auto;
+            padding: 20px;
+            /* grid-auto-rows (use when u dont know how many rows you can have)*/
+            grid-auto-rows: 250px;
+            gap: 30px;
+            max-width: 1200px;
+            
+          }
+
+          main div{
+           background-color: #fff;
+           overflow: hidden;
+           border-radius: 6px;
+           border: 1px solid #ddd;
+           box-shadow: 3px 3px 3px rgba(0,0,0,.05);
+          }
+
+          main img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+         .short{
+            grid-row: span 1;
+         }
+         .large{
+            grid-row: span 2;
+         }
+
+         /*responsiveness*/
+         @media (max-width: 950px){
+            main{
+                grid-template-columns: 1fr 1fr;
+              
+            }
+         }
+
+         @media (max-width: 600px){
+            main{
+                grid-template-columns: 1fr ;
+                
+            }
+            main div{
+                max-width: 400px;
+                margin: 10px auto;
+            }
+
+            nav {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            nav h1{
+               grid-column: span 4;
+               grid-row: 1;
+            }
+           
+         }
+          
+    </style>
+</head>
+<body>
+       <header>
+         <nav>
+            <a href="/">Home</a>
+            <a href="/">Articles</a>
+             <h1>
+                <div>Express</div>
+                <div>Yourself</div>
+             </h1>
+            <a href="/">Guides</a>
+            <a href="/">Contact</a>
+         </nav>
+       </header>
+
+       <main>
+           <div class="short">
+             <h3>A note about styles</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, repudiandae repellendus sunt magni sint.</p>
+             <a href="">Read More</a>
+           </div>
+
+           <div class="large">
+             <img src="./1 (2).png" alt="">
+           </div>
+          
+           <div class="short">
+            <h3>A note about styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, repudiandae repellendus sunt magni sint.</p>
+            <a href="">Read More</a>
+          </div>
+            
+          <div class="large">
+            <img src="./2 (1).png" alt="">
+          </div>
+          
+          <div class="large">
+            <img src="./3 (1).png" alt="">
+          </div>
+
+          <div class="large">
+            <h3>A note about styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, repudiandae repellendus sunt magni sint.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, rerum. Temporibus unde enim fuga totam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem nesciunt, id odit harum quibusdam?</p>
+
+            <a href="">Read More</a>
+          </div>
+
+
+          <div class="large">
+            <img src="./1 (2).png" alt="">
+          </div>
+          
+          <div class="short">
+            <h3>A note about styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, repudiandae repellendus sunt magni sint.</p>
+            <a href="">Read More</a>
+          </div>
+
+          <div class="short">
+            <h3>A note about styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti, repudiandae repellendus sunt magni sint.</p>
+            <a href="">Read More</a>
+          </div>
+
+
+
+       </main>
+</body>
+</html>
