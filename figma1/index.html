@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+            font-weight: 600;
+
+        }
+        ul{
+            list-style: none;
+        }
+        
+        header{
+            color: white;
+            background-color: #6F7DFB;
+            padding: 60px 60px 0px 60px;
+        }
+        nav{
+            display: flex;
+        }
+        .lheader{
+            width: 50%;
+            font-size: 2rem;
+            padding-top: 3px;
+       }
+        .rheader{
+            width: 50%;
+            
+        }
+        .rheader ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .rheader button{
+            width: 130px;
+            background-color: #023047;
+            color: #fff;
+            font-weight: 600;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+
+        hero{
+            margin-top: 64px;
+            display: flex;
+            position: relative;
+        }
+
+        .lhero{
+           width: 40%;
+        }
+        
+        .lhero h1{
+            font-size: xx-large;
+           font-weight: bolder;
+        }
+        .mhero{
+            position: relative;
+            width:20% ;
+        }
+        .rhero{
+          width: 40%;
+          height: 450px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .rhero img{
+            width: 85%;
+            height: 100%;
+        }
+        
+        .mbtn{
+            position: relative;
+            width: 100%;
+        }
+        .mbtn button{
+            font-size: smaller;
+            color: white;
+            background-color: #DA722C;
+            width: 131px;
+            position: absolute;
+            left: 15%;
+            margin-top: 20px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .pos1{
+            position: absolute;
+             top: 15%;
+            left: 26%;
+            background: #fff;
+            color: black;
+            width: 150px;
+            border-radius: 20px;
+            text-align: center;
+            height: 70px;
+        }
+
+        .pos2{
+           
+            position: absolute;
+              top: 50%;
+             
+              background: #fff;
+             color: black;
+             width: 150px;
+             border-radius: 20px;
+             text-align: center;
+             height: 70px;
+        }
+
+        .pos1 p{
+            font-size: smaller;
+        }
+        .pos2 p{
+            font-size: smaller;
+        }
+        
+
+        @media  (max-width:900px){
+            .lheader{
+                width: 40%;
+            }
+            .rheader{
+                width: 60%;
+            }
+            
+        }
+
+        @media  (max-width:750px){
+            .lheader{
+                width: 25%;
+            }
+            .rheader{
+                width: 75%;
+            }
+            .rheader ul{
+                justify-content: space-between;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+      <header>
+            <nav>
+                <h1 class="lheader">GD.</h1>
+                <div class="rheader">
+                    <ul>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Our Work</li>
+                        <li> 
+                            <Button>
+                                Enroll Now</Button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+
+      <hero>
+          <div class="lhero">
+            <h1>Learn The Art of <br>Game Dev</h1>
+            <p style="font-weight: 100;
+             font-size: smaller;
+            ">This is a Comprehensice Course on Game Development <br>You will learn everything generating an idea to <br>publishing your games to different platforms</p>
+            <div class="mbtn">
+            <Button>Enroll Now</Button>
+           
+        </div>
+       
+          </div>
+
+          <div class="mhero">
+            <div class="pos1"> 
+                <h2 >32K</h1>
+                <p style="font-weight: 400;">Students Enrolled</p>
+              </div>
+    
+              <div class="pos2"> 
+                <h2>4.7</h1>
+                <p style="font-weight: 400;">Overall Rating</p>
+              </div>
+          </div>
+          
+          <div class="rhero">
+            <img src="hero-image 1.png" alt="">
+          </div>
+      </hero>
+    </header>
+</body>
+</html>
