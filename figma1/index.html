@@ -144,7 +144,96 @@
         .pos2 p{
             font-size: smaller;
         }
+
+        .feedback{
+          
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        .lf{
+            max-width: 500px;
+           display: flex;
+           position: relative;
+            justify-content: center;
+        }
+
+
+        .stick{
+            height: 445px;
+            width: 20px;
+            background-color: #023047;
+            border-radius: 10px;
+        }
+
+        .ucard{
+            background-color: #fff;
+            max-width: 350px;
+            width: 350px;
+            position: absolute;
+        }
+
+        #card1{
+            top: 10%;
+           right: 10%;
+
+        }
+
+        #card2{
+            top: 57%;
+          right: 0%;
+        }
+
+        .ucheading{
+            background-color:  #6F7DFB;
+            border-radius: 20px;
+            padding: 20px;
+            color: #fff;
+        }
         
+        .ucbody{
+            padding: 20px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ucbody img{
+            position: absolute;
+            top: -20%;
+            right: 10%;
+        }
+
+        .rf{
+            display: flex;
+    
+             padding: 100px 60px 60px 60px;
+        }
+
+        @media (max-width: 1050px){
+            .feedback{
+                justify-content: center;
+                grid-template-columns: 1fr;
+                align-items: center;
+                
+                
+            }
+            .rf{
+                grid-row: 1;
+                padding: 0px 0px 20px 0px;
+                margin-bottom: 20px;
+            }
+            .lf{
+                margin: 0px auto;
+            }
+            #card1{
+                right: -800%;
+            }
+            #card2{
+                right:-800%
+            }
+        }
 
       
     </style>
@@ -197,5 +286,51 @@
           </div>
       </hero>
     </header>
+
+      <div class="feedback">
+          <div class="lf">
+            <div class="stick"></div>
+             <div class="ucard" id="card1">
+                <div class="ucheading">
+                  <h5>This is a great course.It helped me a lot</h3>
+                  <h5>Thank you :)</h3>
+                </div>
+                <div class="ucbody" style="position: relative;">
+                    <div>
+                        <h4>Jane Cooper</h4>
+                         <p style="font-weight: 100;">Developer, Sony</p>
+                    </div>
+                    <div>
+                        <img src="Ellipse 1 (1).png" alt="" height="80px">
+                    </div>
+                </div>
+             </div>
+
+             <div class="ucard" id="card2">
+                <div class="ucheading" style="background-color: #DA722C;">
+                  <h5 >Amazing Work! Well done!</h3>
+                 
+                </div>
+                <div class="ucbody" style="position: relative;">
+                    <div>
+                        <h4>Jacob Jones</h4>
+                         <p style="font-weight: 100;">Designer, Facebook</p>
+                    </div>
+                    <div>
+                        <img src="Ellipse 1.png" alt="" height="80px">
+                    </div>
+                </div>
+             </div>
+             
+          </div>
+          <div class="rf">
+
+             <div class="rfbody">
+                 <h1>What our students say</h1><br>
+                 <p>All students get access to all the videos and also the source code of the projects</p><br>
+                 <p>You will also have access to a private Discord channel where you can discuss your doubts.</p>
+             </div>
+          </div>
+      </div>
 </body>
 </html>
